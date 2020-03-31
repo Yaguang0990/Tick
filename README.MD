@@ -7,7 +7,7 @@
 
 开启倒计时
 
-`‌
+`‌``
 SecTickTask secTickTask = new SecTickTask();
         secTickTask.setTickID(124);//设置ID
         secTickTask.setIntervalsTime(2);
@@ -18,4 +18,4 @@ SecTickTask secTickTask = new SecTickTask();
                 textView.setText(curRepeatTime + "");
             }
         });        
-`    
+```    
