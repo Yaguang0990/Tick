@@ -42,7 +42,7 @@ TimeSchedule.getInstance().addTickTask(secTickTask, new MainThreadCallBackListen
 
 **指数避退计时器**
 ```
-final BackOffTickTask backOffTickTask = new BackOffTickTask();
+BackOffTickTask backOffTickTask = new BackOffTickTask();
 backOffTickTask.setTickID(124);
 backOffTickTask.setIntervalsTime(2);//第一次倒计时延迟时间
 backOffTickTask.setInitialBackoffMillis(2);//倒计时的指数
@@ -52,9 +52,12 @@ backOffTickTask.setMax_backoff_second(30);//设置最大时间间隔,超过这�
 TimeSchedule.getInstance().addTickTask(backOffTickTask, new ThreadCallBackListener() {
     @Override
     public void timeUp(int curRepeatTime) {
-TimeSchedule.getInstance().continueTask(backOffTickTask.getTickID());//增加指数时间，继续倒计时
-        //TimeSchedule.getInstance().removeTask(backOffTickTask.getTickID());//任务成功要调用这个,结束倒计时
+
 
     }
 });
+
+TimeSchedule.getInstance().continueTask(backOffTickTask.getTickID());//增加指数时间，继续倒计时
+//TimeSchedule.getInstance().removeTask(backOffTickTask.getTickID());//任务成功要调用这个,结束倒计时
+
 ```
