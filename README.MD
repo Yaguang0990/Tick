@@ -1,9 +1,11 @@
 # Tick 全局计时器，指数避退计时器（Android）
 
 **引用方法**
-引用 libtick 到项目，或者直接复制 libtick的代码到项目
+
+引用 libtick module 到项目，或者直接复制 libtick的代码到项目
 
 **使用步骤：**
+
 1. 创建计时器任务Task
 2. 设置计时器参数
 3. 开始倒计时
