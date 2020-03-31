@@ -2,7 +2,8 @@
 
 **引用方法**
 
-引用 libtick module 到项目，或者直接复制 libtick的代码到项目
+方法一：引用 libtick module 到项目
+方法二：直接复制 libtick的代码到项目
 
 **使用步骤：**
 
