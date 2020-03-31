@@ -64,3 +64,11 @@ TimeSchedule.getInstance().continueTask(backOffTickTask.getTickID());//增加指
 //TimeSchedule.getInstance().removeTask(backOffTickTask.getTickID());//任务成功要调用这个,结束倒计时
 
 ```
+
+**移除倒计时任务**
+```
+TimeSchedule.getInstance().removeAllTask();//移除所有任务，在退出程序的时候必须调用，
+
+TimeSchedule.getInstance().removeTask(id);//根据TaskID移除任务
+
+```
